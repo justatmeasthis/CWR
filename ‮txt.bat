@@ -14,8 +14,7 @@ color a
 timeout /t 2 /nobreak > NUL
 cls
 :policy
-set /P c=Before you continue, read our privacy policy then type "Y" when you have finished reading it. this is the privacy policy: The following is only for educational purposes, if you use it for harm or "bypassing" then get in trouble, it is not our fault it is only meant to show the vulnerabilities that counties make I do not support "bypassing" education is important. If you do not agree, simply close this and remove it. you agree by pressing "Y" then using the tools that we show:
-if /I "%c%" EQU "Y" goto :abootup
+set /P c=Before you continue, read our privacy policy then type "Y" when you have finished reading it. this is the privacy policy: https://github.com/justatmeasthis/ClassroomWindowsRemover/blob/main/README.md
 goto policy
 :abootup
 goto password
