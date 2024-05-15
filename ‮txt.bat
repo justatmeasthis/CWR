@@ -75,7 +75,7 @@ color b
 cls
 taskkill /f /im ClassroomWindows.exe
 cls
-timeout 2
+timeout /t 2 /nobreak > On Cooldown...
 cls
 goto crip
 :f
