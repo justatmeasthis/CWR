@@ -31,7 +31,7 @@ echo starting in 3 seconds
 timeout /t 3 /nobreak > NUL
 :choice
 cls
-set /P c=Welcome to 0.21.bat (atleast thats what it should be called), what do you want from me?[Y-Some stuff/N-My bad, I want to head out.][I-all I want is info...][S-I would like to change some settings.][T-I what are some tips i can learn?]
+set /P c=Welcome to tab.txt (atleast thats what it should be called), what do you want from me?[Y-Some stuff/N-My bad, I want to head out.][I-all I want is info...][S-I would like to change some settings.][T-I what are some tips i can learn?]
 if /I "%c%" EQU "Y" goto :menu
 if /I "%c%" EQU "R" goto :bootup
 if /I "%c%" EQU "N" goto :nah
@@ -68,7 +68,7 @@ if /I "%c%" EQU "N" goto :menu
 goto cr
 cls
 echo Starting battery saver mode cause I aint wasting battery
-timeout /t 1 /nobreak > NUL
+timeout /t 2 /nobreak > NUL
 cls
 :crip
 color b
@@ -197,7 +197,7 @@ echo starting in 3 seconds
 timeout /t 3 /nobreak > NUL
 :choice1
 cls
-set /P c=Welcome to 0.2.bat (atleast thats what it should be called, what do you want from me?[Y-Some stuff/N-My bad, I want to head out.][I-all I want is info...][S-I would like to change some settings.]
+set /P c=Welcome to tab.txt (atleast thats what it should be called, what do you want from me?[Y-Some stuff/N-My bad, I want to head out.][I-all I want is info...][S-I would like to change some settings.]
 if /I "%c%" EQU "Y" goto :menu
 if /I "%c%" EQU "R" goto :bootup
 if /I "%c%" EQU "N" goto :nah
