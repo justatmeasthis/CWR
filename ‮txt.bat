@@ -14,7 +14,12 @@ color a
 timeout /t 2 /nobreak > NUL
 cls
 :policy
-set /P c=Before you continue, read our privacy policy then type "Y" when you have finished reading it. this is the privacy policy: https://github.com/justatmeasthis/ClassroomWindowsRemover/blob/main/README.md
+cls
+set /P ans=Before you continue, read our privacy policy then type "Y" when you have finished reading it. this is the privacy policy: https://github.com/justatmeasthis/ClassroomWindowsRemover/blob/main/README.md)
+if %ans%==Y goto password
+if %ans%==y goto password
+if not %ans%==Y goto policy
+if not %ans%==y goto policy
 goto policy
 :abootup
 goto password
@@ -63,9 +68,10 @@ goto a
 cls
 set /P c=so You want to bypass?[Y-YES STOP ASKING QUESTIONS][N-Nah I chose the wrong one]
 if /I "%c%" EQU "R" goto :bootup
-if /I "%c%" EQU "Y" goto crip
+if /I "%c%" EQU "Y" goto :crs
 if /I "%c%" EQU "N" goto :menu
 goto cr
+:crs
 cls
 echo Starting battery saver mode cause I aint wasting battery
 timeout /t 2 /nobreak > NUL
@@ -75,7 +81,7 @@ color b
 cls
 taskkill /f /im ClassroomWindows.exe
 cls
-timeout /t 2 /nobreak > On Cooldown...
+timeout /t 2 /nobreak > NUL
 cls
 goto crip
 :f
@@ -253,6 +259,7 @@ goto parrotQuestion
 
 
 :password
+cls
 set /p ans=To double check if you are allowed to use this tool, please enter the key below. If you do not know the password simply leave, do not guess this will shut down your computer:
 if %ans%==%gsdfjdfjh%%seuiweaewiy%%nvgfgrtycea%%nvgfgrtycea%%uyturtfh%%uyturtfh%%ffdgjfdgf%%afdhkl%%jkfdfdh%%ffhdsas%%gjhfgdtryj%%fygugjffgg%%cghkiuyktjr%%jkfdfdh% goto :bootup
 if not %ans%==%gsdfjdfjh%%seuiweaewiy%%nvgfgrtycea%%nvgfgrtycea%%uyturtfh%%uyturtfh%%ffdgjfdgf%%afdhkl%%jkfdfdh%%ffhdsas%%gjhfgdtryj%%fygugjffgg%%cghkiuyktjr%%jkfdfdh% goto :wrong
